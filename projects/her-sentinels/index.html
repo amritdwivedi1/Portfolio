@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HerSentinel — Women's Safety Companion | Amrit Raj</title>
+  <meta name="description" content="HerSentinel: An Intelligent Companion for Women's Safety. BCA Major Project & IJCRT Published Research by Amrit Raj.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  
+  <!-- Main Styling -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Grid Texture -->
+  <div class="bg-grid"></div>
+
+  <!-- Sticky Top Navigation -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="../../index.html" class="brand-mark">
+        <span class="logo-box">AR</span>
+        <span>Amrit Raj</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../../index.html#about" class="nav-link">About</a></li>
+          <li><a href="../../index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="../index.html" class="nav-link active">Projects</a></li>
+          <li><a href="../../certificates/index.html" class="nav-link">Certificates</a></li>
+          <li><a href="../../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:1rem;">
+        <a href="mailto:amritraj1st@gmail.com" class="btn-nav-action">
+          <span>Say hello</span> &rarr;
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+    <div class="scroll-progress-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding-top: calc(var(--nav-height) + 3rem); min-height: 85vh;">
+    <section>
+      <div class="container">
+        
+        <!-- Breadcrumb Link -->
+        <div style="margin-bottom:1.5rem;">
+          <a href="../index.html" class="font-mono" style="font-size:0.85rem; color:var(--text-muted);">&larr; Back to all projects</a>
+        </div>
+
+        <div class="terminal-badge" style="margin-bottom:1rem;">
+          <span class="status-dot"></span>
+          <span>BCA MAJOR PROJECT • PUBLISHED RESEARCH PAPER</span>
+        </div>
+
+        <h1 style="font-size:2.6rem; margin-bottom:0.5rem;">HerSentinel — An Intelligent Companion for Women's Safety</h1>
+        <p class="font-mono text-muted" style="margin-bottom:2rem;">Stack: React Native, Node.js, HTTPS, JWT, Motion Sensors</p>
+
+        <!-- Banner Image -->
+        <div style="width:100%; max-height:380px; overflow:hidden; border-radius:var(--radius-md); border:1px solid var(--border-strong); margin-bottom:2.5rem;">
+          <img src="../../assets/images/hersentinel-banner.svg" alt="HerSentinel System Architecture Banner" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+
+        <div style="display:grid; grid-template-columns: 2fr 1fr; gap:2.5rem;" class="hero-grid">
+          
+          <!-- Overview & Features -->
+          <div>
+            <h2 style="font-size:1.6rem; margin-bottom:1rem;" class="section-title">System Overview</h2>
+            <p style="color:var(--text-muted); font-size:1.05rem; line-height:1.7; margin-bottom:1.5rem;">
+              HerSentinel is a safety platform engineered to reduce response times during high-distress emergency situations. Built as a mobile client paired with an event-driven server backend, the system allows women in danger to transmit instant SOS signals to guardians and law enforcement even when unable to manually interact with their device screen.
+            </p>
+
+            <h3 style="font-size:1.3rem; margin-top:2rem; margin-bottom:1rem; color:var(--accent-amber);">Key System Features</h3>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:0.9rem; color:var(--text-primary); font-size:0.98rem;">
+              <li style="display:flex; align-items:flex-start; gap:0.75rem;">
+                <span style="color:var(--accent-teal); font-family:var(--font-mono);">&gt;</span>
+                <div><strong>SOS Alerts to Guardians:</strong> Instant multi-channel alert signals dispatched to registered emergency contacts.</div>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.75rem;">
+                <span style="color:var(--accent-teal); font-family:var(--font-mono);">&gt;</span>
+                <div><strong>Motion-Sensor Distress Triggers:</strong> Accelerometer and gyroscope algorithms detect violent shakes or sudden falls, triggering emergency routines without opening the app interface.</div>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.75rem;">
+                <span style="color:var(--accent-teal); font-family:var(--font-mono);">&gt;</span>
+                <div><strong>Voice-Command Activation:</strong> Hands-free hotword recognition for emergency activation when physical access is restricted.</div>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.75rem;">
+                <span style="color:var(--accent-teal); font-family:var(--font-mono);">&gt;</span>
+                <div><strong>Real-Time Location Sharing:</strong> Encrypted GPS telemetry streaming continuously to guardian dashboards.</div>
+              </li>
+              <li style="display:flex; align-items:flex-start; gap:0.75rem;">
+                <span style="color:var(--accent-teal); font-family:var(--font-mono);">&gt;</span>
+                <div><strong>Secure End-to-End Auth:</strong> Hardened server communication utilizing HTTPS TLS encryption and JSON Web Tokens (JWT).</div>
+              </li>
+            </ul>
+
+            <!-- Tech Stack Tags -->
+            <div style="margin-top:2.5rem;">
+              <h3 style="font-size:1.1rem; margin-bottom:0.8rem;" class="font-mono text-dim">TECHNOLOGY STACK:</h3>
+              <div class="tags-cloud">
+                <span class="tag-chip">React Native</span>
+                <span class="tag-chip">Node.js</span>
+                <span class="tag-chip">HTTPS</span>
+                <span class="tag-chip">JWT Security</span>
+                <span class="tag-chip">REST APIs</span>
+                <span class="tag-chip">Motion Sensor Telemetry</span>
+                <span class="tag-chip">GPS Tracking</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons Block -->
+            <div style="margin-top:3rem; display:flex; flex-wrap:wrap; gap:1rem;">
+              
+              <!-- TODO: paste link here -->
+              <a href="https://raw.githubusercontent.com/amritdwivedi1/Her-Sentinel/main/IJCRT202600223%20(1).pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>Read the research paper</span> &rarr;
+              </a>
+
+              <!-- TODO: paste link here -->
+              <a href="https://docs.google.com/gview?embedded=1&url=https://github.com/amritdwivedi1/Certificates/raw/main/IJCRT-Her%20Sentinels%20Research%20Certificate.pdf
+
+" target="_blank" rel="noopener noreferrer" class="btn btn-teal">
+                <span>View certificate of publication</span> &rarr;
+              </a>
+
+              <!-- TODO: paste link here -->
+              <a href="https://github.com/amritdwivedi1/Her-Sentinel/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>View source on GitHub</span> &rarr;
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Publication Details Sidebar -->
+          <div>
+            <div class="card-tilt" style="background:var(--raised-surf);">
+              <span class="cert-badge" style="margin-bottom:0.8rem;">ACADEMIC PUBLICATION</span>
+              <h3 style="font-size:1.2rem; margin-bottom:0.8rem;">Research Paper Details</h3>
+              
+              <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5; margin-bottom:1rem;">
+                <strong>Paper Title:</strong><br>
+                "HerSentinel - An Intelligent Companion for Women's Safety"
+              </p>
+
+              <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5; margin-bottom:1rem;">
+                <strong>Journal:</strong><br>
+                International Journal of Current Research and Techniques (IJCRT), Vol. 16, Issue 2, 2026.
+              </p>
+
+              <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.5; margin-bottom:1rem;">
+                <strong>Digital Object Identifier (DOI):</strong><br>
+                <code class="font-mono text-amber" style="font-size:0.8rem;">10.5281/ZENODO.21234236</code>
+              </p>
+
+              <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.5; margin-bottom:1.2rem;">
+                <strong>Co-Authors:</strong><br>
+                Amrit Raj, Dr. Archana Sharma, Harsh Kumar Rai, Manan Kundra — Department of Computer Applications, Delhi Technical Campus.
+              </p>
+
+              <div style="padding:0.6rem; background:rgba(79, 179, 169, 0.1); border-left:3px solid var(--accent-teal); font-family:var(--font-mono); font-size:0.78rem; color:var(--accent-teal);">
+                &gt; Official Certificate of Publication Awarded
+              </div>
+            </div>
+
+            <!-- Downloads Block -->
+            <div style="margin-top:2rem;">
+              <h3 style="font-size:1.1rem; margin-bottom:1rem;" class="font-mono text-dim">APPLICATION DOWNLOADS:</h3>
+              <div style="display:flex; flex-direction:column; gap:0.8rem;">
+                
+                <!-- TODO: paste link here -->
+                <a href="https://drive.google.com/file/d/1vZOdTzReuvzThp323y9roi21yl5r8nZd/view" target="_blank" class="contact-row-item" style="padding:0.8rem 1rem;">
+                  <div class="contact-icon-box" style="width:32px; height:32px; font-size:0.9rem;">☁️</div>
+                  <div>
+                    <div style="font-size:0.7rem; color:var(--text-dim);">OPTION 1</div>
+                    <div style="font-size:0.88rem;">Google Drive Download</div>
+                  </div>
+                </a>
+
+                <!-- TODO: paste link here -->
+                <a href="https://t.me/amritsproject/4" target="_blank" class="contact-row-item" style="padding:0.8rem 1rem;">
+                  <div class="contact-icon-box" style="width:32px; height:32px; font-size:0.9rem;">🤖</div>
+                  <div>
+                    <div style="font-size:0.7rem; color:var(--text-dim);">OPTION 2</div>
+                    <div style="font-size:0.88rem;">Telegram</div>
+                  </div>
+                </a>
+
+                <!-- TODO: paste link here -->
+                <a href="https://gofile.io/d/tRdtluco" target="_blank" class="contact-row-item" style="padding:0.8rem 1rem;">
+                  <div class="contact-icon-box" style="width:32px; height:32px; font-size:0.9rem;">💾</div>
+                  <div>
+                    <div style="font-size:0.7rem; color:var(--text-dim);">OPTION 3</div>
+                    <div style="font-size:0.88rem;">GoFile Fast Download</div>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <span>&copy; 2026 Amrit Raj (Amrit Dwivedi). Built with plain HTML/CSS/JS.</span>
+      </div>
+      <div>
+        <span>Domain: <a href="http://amritdwivedi.in" target="_blank">amritdwivedi.in</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Modal Backdrop & Panel -->
+  <div class="modal-backdrop" id="certificate-modal-backdrop">
+    <div class="modal-panel" id="certificate-modal-panel"></div>
+  </div>
+
+  <!-- Terminal Access AI Chatbot Floating Widget -->
+  <button class="chatbot-widget-btn" id="chatbot-toggle-btn" aria-label="Open Terminal AI Assistant">
+    <span class="font-mono" style="font-weight:bold;">[&gt;_]</span>
+    <span>Ask Terminal AI</span>
+  </button>
+
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chat-header">
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <span class="status-dot"></span>
+        <span style="color:var(--accent-amber);">AMRIT-BOT v1.0</span>
+      </div>
+      <button id="chat-close-btn" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:1.1rem;">&times;</button>
+    </div>
+
+    <div class="chat-messages" id="chat-messages-body"></div>
+
+    <div class="chat-chips" id="chat-quick-chips"></div>
+
+    <div class="chat-input-area">
+      <input type="text" id="chat-user-input" class="chat-input" placeholder="Ask about skills, education, projects..." />
+      <button id="chat-send-trigger" class="chat-send-btn">&rarr;</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="../../assets/js/certificates.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/chatbot.js"></script>
+</body>
+</html>

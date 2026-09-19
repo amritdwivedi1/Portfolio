@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates & Credentials | Amrit Raj Portfolio</title>
+  <meta name="description" content="Academic certificates, AWS cloud credentials, Python training, and research paper publications of Amrit Raj.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  
+  <!-- Main Styling -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Grid Texture -->
+  <div class="bg-grid"></div>
+
+  <!-- Sticky Top Navigation -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-mark">
+        <span class="logo-box">AR</span>
+        <span>Amrit Raj</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html#about" class="nav-link">About</a></li>
+          <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="../projects/index.html" class="nav-link">Projects</a></li>
+          <li><a href="index.html" class="nav-link active">Certificates</a></li>
+          <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:1rem;">
+        <a href="mailto:amritraj1st@gmail.com" class="btn-nav-action">
+          <span>Say hello</span> &rarr;
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+    <div class="scroll-progress-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding-top: calc(var(--nav-height) + 3rem); min-height: 85vh;">
+    <section>
+      <div class="container">
+        <h1 class="section-title">Certifications &amp; Credentials</h1>
+        <p class="section-subtitle">Verified Publications, Technical Training &amp; Cloud Certifications</p>
+
+        <div style="background:var(--raised-surf); border:1px solid var(--border-hairline); border-radius:var(--radius-sm); padding:1rem 1.25rem; font-family:var(--font-mono); font-size:0.85rem; color:var(--text-muted); margin-bottom:2rem; display:flex; align-items:center; gap:0.75rem;">
+          <span class="status-dot"></span>
+          <span>Click any certificate tile below to launch the animated modal viewer and inspect credential details.</span>
+        </div>
+
+        <!-- Dynamic Grid Container -->
+        <div class="skills-grid" id="certificates-grid-container" style="margin-top:1.5rem;">
+          <!-- Populated dynamically by certificates.js -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <span>&copy; 2026 Amrit Raj (Amrit Dwivedi). Built with plain HTML/CSS/JS.</span>
+      </div>
+      <div>
+        <span>Domain: <a href="http://amritdwivedi.in" target="_blank">amritdwivedi.in</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Modal Backdrop & Panel -->
+  <div class="modal-backdrop" id="certificate-modal-backdrop">
+    <div class="modal-panel" id="certificate-modal-panel">
+      <!-- Populated dynamically by certificates.js -->
+    </div>
+  </div>
+
+  <!-- Terminal Access AI Chatbot Floating Widget -->
+  <button class="chatbot-widget-btn" id="chatbot-toggle-btn" aria-label="Open Terminal AI Assistant">
+    <span class="font-mono" style="font-weight:bold;">[&gt;_]</span>
+    <span>Ask Terminal AI</span>
+  </button>
+
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chat-header">
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <span class="status-dot"></span>
+        <span style="color:var(--accent-amber);">AMRIT-BOT v1.0</span>
+      </div>
+      <button id="chat-close-btn" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:1.1rem;">&times;</button>
+    </div>
+
+    <div class="chat-messages" id="chat-messages-body"></div>
+
+    <div class="chat-chips" id="chat-quick-chips"></div>
+
+    <div class="chat-input-area">
+      <input type="text" id="chat-user-input" class="chat-input" placeholder="Ask about skills, education, projects..." />
+      <button id="chat-send-trigger" class="chat-send-btn">&rarr;</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="../assets/js/certificates.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/chatbot.js"></script>
+</body>
+</html>

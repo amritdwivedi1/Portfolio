@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Amrit Raj Portfolio</title>
+  <meta name="description" content="Software & Cyber Security Projects by Amrit Raj, featuring HerSentinel Women's Safety Companion and MCA research work.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  
+  <!-- Main Styling -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Grid Texture -->
+  <div class="bg-grid"></div>
+
+  <!-- Sticky Top Navigation -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-mark">
+        <span class="logo-box">AR</span>
+        <span>Amrit Raj</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html#about" class="nav-link">About</a></li>
+          <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="index.html" class="nav-link active">Projects</a></li>
+          <li><a href="../certificates/index.html" class="nav-link">Certificates</a></li>
+          <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:1rem;">
+        <a href="mailto:amritraj1st@gmail.com" class="btn-nav-action">
+          <span>Say hello</span> &rarr;
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+    <div class="scroll-progress-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main style="padding-top: calc(var(--nav-height) + 3rem); min-height: 85vh;">
+    <section>
+      <div class="container">
+        <h1 class="section-title">Projects Showcase</h1>
+        <p class="section-subtitle">Systems, Web Applications &amp; Security Research</p>
+
+        <div class="projects-grid" style="margin-top:2rem;">
+
+          <!-- HerSentinel Card -->
+          <div class="card-tilt project-card">
+            <div>
+              <span class="project-tag">BCA Major Project • Published Research</span>
+              <h2 style="font-size:1.6rem; margin-top:0.4rem; margin-bottom:0.8rem;">HerSentinel — Women's Safety Companion</h2>
+              
+              <div style="height:180px; overflow:hidden; border-radius:6px; margin-bottom:1.2rem; border:1px solid var(--border-strong);">
+                <img src="../assets/images/hersentinel-banner.svg" alt="HerSentinel Safety System" style="width:100%; height:100%; object-fit:cover;">
+              </div>
+
+              <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">
+                An intelligent emergency companion system integrating hands-free voice commands, motion-sensor distress detection, real-time guardian tracking, and instant SOS alerts over encrypted HTTPS/JWT protocols.
+              </p>
+
+              <div class="pub-highlight">
+                <strong>📄 Published in IJCRT:</strong> Vol. 16, Issue 2, 2026. DOI: 10.5281/ZENODO.21234236
+              </div>
+            </div>
+
+            <div style="margin-top:1.5rem;">
+              <div class="tags-cloud" style="margin-bottom:1.2rem;">
+                <span class="tag-chip">React Native</span>
+                <span class="tag-chip">Node.js</span>
+                <span class="tag-chip">HTTPS / JWT</span>
+                <span class="tag-chip">Motion Sensors</span>
+              </div>
+
+              <a href="her-sentinels/index.html" class="btn btn-primary" style="width:100%;">
+                <span>View project detail page</span> &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Coming Soon Placeholder Card -->
+          <div class="card-tilt project-card" style="border-style:dashed;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <span class="project-tag" style="color:var(--accent-amber);">MCA Cyber Security • In Progress</span>
+                <span class="status-dot"></span>
+              </div>
+
+              <h2 style="font-size:1.6rem; margin-top:0.4rem; margin-bottom:0.8rem; color:var(--text-muted);">MCA Cyber Security Research &amp; Automation Suite</h2>
+
+              <div class="cert-placeholder-tile" style="height:180px; margin-bottom:1.2rem;">
+                <span style="font-size:2.5rem;">🛡️</span>
+                <span style="font-size:1rem; font-weight:bold; color:var(--text-primary);">Project In Active Development</span>
+                <span style="font-size:0.8rem; color:var(--text-dim);">SGT University MCA 1st Semester Project</span>
+              </div>
+
+              <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">
+                Upcoming postgraduate project focusing on automated vulnerability scanning, socket-based network traffic analysis, and security hardening scripts built with Python &amp; PostgreSQL.
+              </p>
+            </div>
+
+            <div style="margin-top:1.5rem;">
+              <div class="tags-cloud" style="margin-bottom:1.2rem;">
+                <span class="tag-chip">Python</span>
+                <span class="tag-chip">PostgreSQL</span>
+                <span class="tag-chip">Network Security</span>
+                <span class="tag-chip">Automation</span>
+              </div>
+
+              <button class="btn btn-secondary" disabled style="width:100%; opacity:0.6; cursor:not-allowed;">
+                <span>Coming Soon (In Progress)</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <span>&copy; 2026 Amrit Raj (Amrit Dwivedi). Built with plain HTML/CSS/JS.</span>
+      </div>
+      <div>
+        <span>Domain: <a href="http://amritdwivedi.in" target="_blank">amritdwivedi.in</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Modal Backdrop & Panel -->
+  <div class="modal-backdrop" id="certificate-modal-backdrop">
+    <div class="modal-panel" id="certificate-modal-panel"></div>
+  </div>
+
+  <!-- Terminal Access AI Chatbot Floating Widget -->
+  <button class="chatbot-widget-btn" id="chatbot-toggle-btn" aria-label="Open Terminal AI Assistant">
+    <span class="font-mono" style="font-weight:bold;">[&gt;_]</span>
+    <span>Ask Terminal AI</span>
+  </button>
+
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chat-header">
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <span class="status-dot"></span>
+        <span style="color:var(--accent-amber);">AMRIT-BOT v1.0</span>
+      </div>
+      <button id="chat-close-btn" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:1.1rem;">&times;</button>
+    </div>
+
+    <div class="chat-messages" id="chat-messages-body"></div>
+
+    <div class="chat-chips" id="chat-quick-chips"></div>
+
+    <div class="chat-input-area">
+      <input type="text" id="chat-user-input" class="chat-input" placeholder="Ask about skills, education, projects..." />
+      <button id="chat-send-trigger" class="chat-send-btn">&rarr;</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="../assets/js/certificates.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/chatbot.js"></script>
+</body>
+</html>
