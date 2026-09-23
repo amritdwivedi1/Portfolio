@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrit Raj | MCA Cyber Security & Python Developer</title>
+  <meta name="description" content="Personal Portfolio of Amrit Raj (Amrit Dwivedi) — Aspiring IT Professional, MCA Cyber Security student, Python & Web Development Enthusiast.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  
+  <!-- Main Styling -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Grid Texture & Canvas Drift -->
+  <div class="bg-grid"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Fully 3D WebGL Background (site-wide, behind all content) -->
+  <canvas id="three-bg"></canvas>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Sticky Top Navigation -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-mark">
+        <span class="logo-box">AR</span>
+        <span>Amrit Raj</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="projects/index.html" class="nav-link">Projects</a></li>
+          <li><a href="certificates/index.html" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:1rem;">
+        <a href="mailto:amritraj1st@gmail.com" class="btn-nav-action">
+          <span>Say hello</span> &rarr;
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+    <div class="scroll-progress-bar"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="terminal-badge">
+            <span class="status-dot"></span>
+            <span>SYSTEM ONLINE // READY TO CONTRIBUTE</span>
+          </div>
+
+          <h1 class="hero-title">Amrit Raj</h1>
+          <p class="hero-tagline">&gt; Aspiring IT Professional | Python &amp; Web Development | Cyber Security Enthusiast</p>
+          <p class="hero-bio">
+            Computer applications postgraduate with hands-on software development experience, building resilient web applications and growing a strong focus on security-driven real-world systems. Based in Delhi, India.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="projects/index.html" class="btn btn-primary">
+              <span>View my projects</span> &rarr;
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- Terminal Boot Panel -->
+        <div class="terminal-panel">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="term-btn red"></span>
+              <span class="term-btn yellow"></span>
+              <span class="term-btn green"></span>
+            </div>
+            <span class="terminal-title">zsh — amrit@security-terminal:~</span>
+          </div>
+          <div class="terminal-body" id="terminal-boot-body">
+            <!-- Dynamically animated boot lines by main.js -->
+            <div class="term-line revealed">
+              <div><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></div>
+              <div class="term-res">amrit_raj — MCA (Cyber Security), SGT University</div>
+            </div>
+            <div class="term-line revealed">
+              <div><span class="term-prompt">$</span> <span class="term-cmd">status --current</span></div>
+              <div class="term-res">learning: ethical hacking, PostgreSQL, advanced Python</div>
+            </div>
+            <div class="term-line revealed">
+              <div><span class="term-prompt">$</span> <span class="term-cmd">access --internship</span></div>
+              <div class="term-res">granted — ready to contribute <span class="cursor-blink"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Education Timeline -->
+    <section id="about" class="reveal">
+      <div class="container">
+        <h2 class="section-title">Academic &amp; Background</h2>
+        <p class="section-subtitle">Education Timeline &amp; Credentials</p>
+
+        <div class="timeline">
+          <!-- MCA -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2026 – Present (Current 1st Semester)</div>
+            <h3 class="timeline-title">Master of Computer Applications (MCA)</h3>
+            <p class="timeline-subtitle">Cyber Security Specialization — SGT University</p>
+            <span class="timeline-badge">Focus: Network Defense, Cryptography, Advanced Python &amp; Systems</span>
+          </div>
+
+          <!-- BCA -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2023 – 2026</div>
+            <h3 class="timeline-title">Bachelor of Computer Applications (BCA)</h3>
+            <p class="timeline-subtitle">Guru Gobind Singh Indraprastha University (GGSIPU)</p>
+            <span class="timeline-badge">Graduated with CGPA: 8.4</span>
+          </div>
+
+          <!-- Class XII -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2023</div>
+            <h3 class="timeline-title">Senior Secondary (Class XII)</h3>
+            <p class="timeline-subtitle">GM High School, BSEB Board</p>
+            <span class="timeline-badge">Score: 70.2%</span>
+          </div>
+
+          <!-- Class X -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-period">2021</div>
+            <h3 class="timeline-title">Secondary (Class X)</h3>
+            <p class="timeline-subtitle">GM High School, BSEB Board</p>
+            <span class="timeline-badge">Score: 69.2%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+      <div class="container">
+        <h2 class="section-title">Technical Proficiency</h2>
+        <p class="section-subtitle">Languages, Databases, Frameworks &amp; Tools</p>
+
+        <div class="skills-grid">
+          <!-- Programming -->
+          <div class="card-tilt">
+            <h3 class="skill-category-title">
+              <span>⚡</span> <span>Programming Languages</span>
+            </h3>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-level="90%"></div>
+              </div>
+              <div class="skill-signal-bars">
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>C / C++</span>
+                <span>60%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-level="60%"></div>
+              </div>
+              <div class="skill-signal-bars">
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Java</span>
+                <span>60%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-level="60%"></div>
+              </div>
+              <div class="skill-signal-bars">
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="card-tilt">
+            <h3 class="skill-category-title">
+              <span>🗄️</span> <span>Database Systems</span>
+            </h3>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>SQL</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-level="90%"></div>
+              </div>
+              <div class="skill-signal-bars">
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MongoDB</span>
+                <span>~80%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-level="80%"></div>
+              </div>
+              <div class="skill-signal-bars">
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MySQL</span>
+                <span>~80%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-level="80%"></div>
+              </div>
+              <div class="skill-signal-bars">
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>PostgreSQL (in progress)</span>
+                <span>~50%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-level="50%"></div>
+              </div>
+              <div class="skill-signal-bars">
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+                <span class="signal-segment"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web & Tools Tags -->
+          <div class="card-tilt" style="grid-column: 1 / -1;">
+            <h3 class="skill-category-title">
+              <span>🛠️</span> <span>Frameworks, Libraries &amp; Security Tools</span>
+            </h3>
+
+            <div style="display:flex; flex-direction:column; gap:1.2rem;">
+              <div>
+                <p class="font-mono text-dim" style="font-size:0.85rem; margin-bottom:0.6rem;">WEB TECHNOLOGIES:</p>
+                <div class="tags-cloud">
+                  <span class="tag-chip">HTML5</span>
+                  <span class="tag-chip">CSS3</span>
+                  <span class="tag-chip">JavaScript (ES6+)</span>
+                  <span class="tag-chip">Django</span>
+                  <span class="tag-chip">Flask</span>
+                  <span class="tag-chip">Django REST Framework</span>
+                </div>
+              </div>
+
+              <div>
+                <p class="font-mono text-dim" style="font-size:0.85rem; margin-bottom:0.6rem;">LIBRARIES &amp; OTHER TOOLS:</p>
+                <div class="tags-cloud">
+                  <span class="tag-chip">Pandas</span>
+                  <span class="tag-chip">NumPy</span>
+                  <span class="tag-chip">OpenCV</span>
+                  <span class="tag-chip">Selenium Automation</span>
+                  <span class="tag-chip">Socket-based Network Programming</span>
+                  <span class="tag-chip">Git / GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D Certificates Ring Section -->
+    <section id="certificates" class="reveal">
+      <div class="container">
+        <h2 class="section-title">Certifications &amp; Publications</h2>
+        <p class="section-subtitle">3D Vault Ring — Hover to pause rotation &amp; click to inspect details</p>
+
+        <!-- 3D Carousel Stage -->
+        <div class="carousel-stage" id="certificate-3d-stage">
+          <div class="carousel-ring" id="certificate-3d-ring">
+            <!-- Rendered dynamically by 3d-carousel.js -->
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1.5rem;">
+          <a href="certificates/index.html" class="btn btn-teal">
+            <span>View all certificates in grid view</span> &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project Section -->
+    <section id="featured-project" class="reveal">
+      <div class="container">
+        <h2 class="section-title">Featured Major Project</h2>
+        <p class="section-subtitle">Published Research &amp; Production Implementation</p>
+
+        <div class="card-tilt project-card">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
+              <div>
+                <span class="project-tag">BCA Final Year Major Project • Research Paper</span>
+                <h3 style="font-size:1.8rem; margin-top:0.2rem;">HerSentinel — An Intelligent Companion for Women's Safety</h3>
+              </div>
+              <span class="cert-badge" style="border-color:var(--accent-teal); color:var(--accent-teal);">PUBLISHED RESEARCH</span>
+            </div>
+
+            <p style="color:var(--text-muted); margin-top:1rem; line-height:1.6;">
+              A multi-channel emergency safety system featuring instant SOS alerts sent to registered guardians, distress detection via motion sensors, hands-free voice-command triggers, and encrypted real-time location tracking over HTTPS/JWT.
+            </p>
+
+            <div class="pub-highlight">
+              <strong>📄 Official Publication:</strong> Published as "HerSentinel - An Intelligent Companion for Women's Safety", <em>International Journal of Current Research and Techniques (IJCRT)</em>, Vol. 16, Issue 2, 2026. DOI: 10.5281/ZENODO.21234236
+            </div>
+          </div>
+
+          <div style="margin-top:2rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+            <div class="tags-cloud">
+              <span class="tag-chip">React Native</span>
+              <span class="tag-chip">Node.js</span>
+              <span class="tag-chip">HTTPS</span>
+              <span class="tag-chip">JWT Security</span>
+              <span class="tag-chip">Motion Sensors</span>
+            </div>
+
+            <a href="projects/her-sentinels/index.html" class="btn btn-primary">
+              <span>Inspect HerSentinel details</span> &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Open for Internships, Security Research &amp; Collaboration</p>
+
+        <div class="contact-grid">
+          <div>
+            <p style="color:var(--text-muted); font-size:1.1rem; line-height:1.7; margin-bottom:1.5rem;">
+              Whether you're looking for an MCA postgraduate intern, a Python developer, or discussing cyber security research — feel free to send a message. I am based in Delhi, India and ready to contribute.
+            </p>
+            <div class="terminal-badge">
+              <span class="status-dot"></span>
+              <span>AVAILABLE FOR OPPORTUNITIES</span>
+            </div>
+          </div>
+
+          <div class="contact-rows">
+            <!-- Email -->
+            <a href="mailto:amritraj1st@gmail.com" class="contact-row-item">
+              <div class="contact-icon-box">📧</div>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-dim);">EMAIL ADDRESS</div>
+                <div>amritraj1st@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+917481082060" class="contact-row-item">
+              <div class="contact-icon-box">📞</div>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-dim);">PHONE / WHATSAPP</div>
+                <div>+91 74810 82060</div>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/amritdwivedi1" target="_blank" rel="noopener noreferrer" class="contact-row-item">
+              <div class="contact-icon-box">🔗</div>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-dim);">LINKEDIN PROFILE</div>
+                <div>linkedin.com/in/amritdwivedi1</div>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/amritdwivedi1" target="_blank" rel="noopener noreferrer" class="contact-row-item">
+              <div class="contact-icon-box">💻</div>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-dim);">GITHUB REPOSITORIES</div>
+                <div>github.com/amritdwivedi1</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <span>&copy; 2026 Amrit Raj (Amrit Dwivedi). Built with plain HTML/CSS/JS.</span>
+      </div>
+      <div>
+        <span>Domain: <a href="http://amritdwivedi.in" target="_blank">amritdwivedi.in</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Modal Backdrop & Panel -->
+  <div class="modal-backdrop" id="certificate-modal-backdrop">
+    <div class="modal-panel" id="certificate-modal-panel">
+      <!-- Populated dynamically by certificates.js -->
+    </div>
+  </div>
+
+  <!-- Terminal Access AI Chatbot Floating Widget -->
+  <button class="chatbot-widget-btn" id="chatbot-toggle-btn" aria-label="Open Terminal AI Assistant">
+    <span class="font-mono" style="font-weight:bold;">[&gt;_]</span>
+    <span>Ask Terminal AI</span>
+  </button>
+
+  <div class="chatbot-window" id="chatbot-window">
+    <div class="chat-header">
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <span class="status-dot"></span>
+        <span style="color:var(--accent-amber);">AMRIT-BOT v1.0</span>
+      </div>
+      <button id="chat-close-btn" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:1.1rem;">&times;</button>
+    </div>
+
+    <div class="chat-messages" id="chat-messages-body">
+      <!-- Chat history populated dynamically by chatbot.js -->
+    </div>
+
+    <div class="chat-chips" id="chat-quick-chips">
+      <!-- Quick question chips -->
+    </div>
+
+    <div class="chat-input-area">
+      <input type="text" id="chat-user-input" class="chat-input" placeholder="Ask about skills, education, projects..." />
+      <button id="chat-send-trigger" class="chat-send-btn">&rarr;</button>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/certificates.js"></script>
+  <script src="assets/js/3d-carousel.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chatbot.js"></script>
+
+  <!-- 3D Background + Custom Cursor Enhancements -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/three-background.js"></script>
+  <script src="assets/js/cursor-effect.js"></script>
+</body>
+</html>
